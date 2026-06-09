@@ -21,3 +21,41 @@ Output:
   "Bob"
 ]*/
 
+function getRoommates(people) {
+    let groups = {};
+    let result = [];
+
+    // Put names into their groups
+    for (let person of people) {
+        if (!groups[person.group]) {
+            groups[person.group] = [];
+        }
+        groups[person.group].push(person.name);
+    }
+
+    // Make room assignments
+    for (let group in groups) {
+        let names = groups[group];
+
+        for (let i = 0; i < names.length; i += 2) {
+            if (i + 1 < names.length) {
+                result.push(names[i] + " and " + names[i + 1]);
+            } else {
+                result.push(names[i]);
+            }
+        }
+    }
+
+    return result;
+}
+
+/*
+Concepts Used:
+- Arrays
+- Objects
+- Grouping data
+- Loops
+- Array methods
+- Conditional logic
+- String concatenation
+*/

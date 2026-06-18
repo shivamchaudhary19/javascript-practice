@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.texts{
+    padding-top: 30px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.text h1 , p{
+    margin: 20px 10px;
+}
+
+.canvas{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 500px;
+    background-color: grey;
+}
+
+#red{
+    border: 5px solid black;
+    display: block;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+#blue{
+    border: 5px solid black;
+    display: block;
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+}
+
+#yellow{
+    border: 5px solid black;
+    display: block;
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+}
+
+#green{
+    border: 5px solid black;
+    display: block;
+    background-color: green;
+    height: 150px;
+    width: 150px;
+}
+
+#skyblue{
+    border: 5px solid black;
+    display: block;
+    background-color: skyblue;
+    height: 150px;
+    width: 150px;
+}

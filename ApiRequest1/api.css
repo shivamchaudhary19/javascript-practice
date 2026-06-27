@@ -20,8 +20,12 @@ body {
 }
 
 .profile {
-    width: 100%;
+    box-sizing: border-box;
+    margin: 3px;
+    width: calc(100% - 6px);
     height: 75%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 .profile img {
@@ -31,9 +35,9 @@ body {
 }
 
 .info {
-    padding: 10px;
+    padding: 7px;
     color: white;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 button {
